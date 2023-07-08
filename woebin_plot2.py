@@ -278,8 +278,8 @@ class WoeReport:
         else:
             data_feat_cols = list(data.columns)
             data_feat_cols.remove(y)
-
-            if set(data_feat_cols) == set(self.features):
+            print(set(self.features).issubset(set(data_feat_cols)))
+            if set(self.features).issubset(set(data_feat_cols)):
                 self.data = data
                 self.y = y
                 valid = True
@@ -296,7 +296,7 @@ class WoeReport:
         results = ResultInstance()
         results.bins = bins
         results.name = self.name
-        results.features = self.features 
+        results.feat = self.features 
         results.ax = self.ax  
         results.adjust_xlabel = self.adjust_xlabel
         results.rotation = self.rotation
