@@ -322,7 +322,7 @@ class WoeReport:
             res = None
         else:
             res = self.generate()
-            print('Woe bins raady!')
+            print('Woe bins ready!')
 
 
         return res
