@@ -7,4 +7,4 @@
     This package is experimental and the tools may be subject
     to changes in future releases.
 """
-from .data_drift import DriftReport
+from .woebin_plot2 import WoeReport
