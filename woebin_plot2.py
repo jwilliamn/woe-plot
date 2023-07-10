@@ -212,8 +212,8 @@ class ResultInstance:
 
                 fig, axes = plt.subplots(3, 2, figsize=(18, 20))
                 for i in range(len(var)):
-                    woebin_plot2(self.bins[self.feat[i]], ax=axes[int(i/2), i%2])
-                    axes[int(i/2), i%2].set_xlabel(self.feat[i])
+                    woebin_plot2(self.bins[var[i]], ax=axes[int(i/2), i%2])
+                    axes[int(i/2), i%2].set_xlabel(var[i])
 
                 if pg == 0:
                     fig.suptitle(self.name, x=0.3, y=0.93, fontsize=24, weight='bold', c='#1eba20')
